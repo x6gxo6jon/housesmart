@@ -15,7 +15,7 @@ h1,h2,h3,h4,h5,h6{
 	line-height: 1.6;
 }
 h1{
-	font-size: 32px;
+	font-size: 38px;
 	font-weight: 600;
 }
 h2{
@@ -28,7 +28,7 @@ h3{
 	font-weight: 300;
 }
 h4{
-	font-size: 20px;
+	font-size: 22px;
 	font-weight: 300;
 }
 p{
@@ -38,9 +38,10 @@ p{
 }
 .container{
 	width: 100%;
-	max-width: 1280px;
+	height: auto;
+	max-width: 1024px;
 	margin: 0 auto;
-	padding: 0 20px;
+	padding: 0 16px;
 }
 .subtitle{
 	color: #414042;
@@ -62,21 +63,21 @@ p{
 .subtitle:after{
 	margin-left: 1em;
 }
-@media(min-width: 1024px){
+@media(min-width: 768px){
 	h1{
-		font-size: 56px;
-	}
-	h2{
 		font-size: 40px;
 	}
-	h3{
-		font-size: 32px;
+	h2{
+		font-size: 28px;
 	}
-	h4{
+	h3{
 		font-size: 24px;
 	}
-	p{
+	h4{
 		font-size: 20px;
+	}
+	p{
+		font-size: 16px;
 	}
 }
 @media(min-width: 1280px){
@@ -206,7 +207,7 @@ header .container{
 }
 @media (min-width: 768px) { 
 	.logo{
-		width: 35%;
+		width: 30%;
 	}
 	.header-search{
 		width: 80%;
@@ -228,7 +229,7 @@ header .container{
 		align-items: center;
 	}
 	.logo {
-    	width: 34%;
+    	width: 30%;
 	}
 	.menu_toggle{
 		display: none;
@@ -252,9 +253,9 @@ header .container{
 		text-decoration: none;
 		color: #29ABE2;
 		display: inline-block;
-		font-size: 20px;
-		margin: 0 14px;
-		padding: 15px 0;
+		font-size: 16px;
+		margin: 0 12px;
+		padding: 12px 0;
 		border-bottom: 1px solid #29ABE2;
 	}	
 	.nav_item a:hover{
@@ -278,7 +279,7 @@ header .container{
 		color: #aaa;
 	}
 	.header-search button i{
-		font-size: 24px;
+		font-size: 18px;
 	}
 	.header-search input{
 		width: 60%;
@@ -289,9 +290,6 @@ header .container{
 @media(min-width: 1280px){
 	.logo {
     	width: 26%;
-	}
-	.nav_item a{
-		margin: 0 20px;
 	}
 	.header-search input{
 		width: 80%;
@@ -351,8 +349,8 @@ header .container{
 	width: 90%;
 	background: #5ABADB;
 	position: absolute;
-	left: auto;
-	right: auto;
+	left: 50%;
+	transform: translateX(-50%);
 	bottom: -40%;
 	text-align: center;
 	display: flex;
@@ -364,7 +362,7 @@ header .container{
 }
 .banner-txt h1 small{
 	display: block;
-	font-size: 24px;
+	font-size: 22px;
 	font-weight: 400;
 	margin-bottom: 0px;
 	padding-bottom: 20px;
@@ -379,45 +377,46 @@ header .container{
 }
 @media(min-width: 768px){
 	.banner{
-		height: 70vh;
+		height: 60vh;
 	}
 	.banner-txt{
 		width: 40%;
 		background: rgba(90, 186, 219, .9);
 		position: absolute;
-		right: 20px;
+		left: 60%;
 		top: 50%;
 		transform: translateY(-50%);
 		height: 60vh;
+		padding: 0 .5em;
 	}
 }
 @media(min-width: 1024px){
 	.banner-txt h1{
-		height: 120px;
-		padding-bottom: 24px;
+		font-size: 36px;
 	}
 	.banner-txt h1 small{
-		font-size: 32px;
+		font-size: 20px;
 	}
 	.banner-txt p{
-		font-size: 20px;
+		margin-top: 1em;
+		font-size: 18px;
 	}
 }
 @media(min-width: 1280px){
 	.banner-txt h1{
-		font-size: 48px;
+		font-size: 40px;
 		height: 120px;
-		padding-bottom: 24px;
 	}
 	.banner-txt h1 small{
-		font-size: 28px;
-	}
-	.banner-txt p{
-		font-size: 18px;
+		font-size: 24px;
 	}
 	.banner-txt{
-		right: 8%;
 		width: 30%;
+	}
+	.banner-txt p{
+		margin-top: 0;
+		padding-top: 0;
+		font-size: 16px;
 	}
 }
 /*detail*/
@@ -495,8 +494,8 @@ header .container{
 	margin-top: 16px;
 }
 .owl-prev,.owl-next{
-	width: 44px;
-	height: 44px;
+	width: 36px;
+	height: 36px;
 	border-radius: 50%;
 	border:1px solid #aaa;
 	background-color: inherit;
@@ -539,7 +538,7 @@ header .container{
 		box-shadow: 3px 3px 3px rgba(0,0,0,.1)
 	}
 	.owl-nav {
-    	margin-top: 40px;
+    	margin-top: 18px;
     	margin-bottom: 50px;
 	}
 }
@@ -645,7 +644,7 @@ header .container{
 }
 @media(min-width: 1024px){
 	.feature-item{
-		margin-bottom: 80px;
+		margin-bottom: 40px;
 	}
 	.feature_imbox{
 		width: 55%;
@@ -859,7 +858,7 @@ header .container{
 		padding-bottom: 80px;
 	}
 	.inst_item{
-		margin: 16px;
+		margin: 12px;
 	}
 }
 /*footer*/
